@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+       android:shape="oval">
+    <!--垂直步骤条进行中图片-->
+    <solid android:color="@color/deiui_white"/>
+    <size
+            android:width="18dp"
+            android:height="18dp"/>
+    <stroke
+            android:width="2dp"
+            android:color="@color/deiui_main_color"/>
+</shape>

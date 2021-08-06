@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:id="@+id/easy_alert_dialog_layout"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:layout_gravity="center"
+              android:background="@color/deiui_high_level_white_background_color"
+              android:orientation="vertical">
+
+    <include
+            android:id="@+id/easy_dialog_title_view"
+            layout="@layout/deiui_alert_dialog_title_message"
+            android:layout_margin="23dp"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"/>
+
+    <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/deiui_items_divider_deep_color"/>
+
+    <ListView
+            android:id="@+id/easy_dialog_list_view"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:dividerHeight="@dimen/light_line_size"
+            android:divider="@color/deiui_items_divider_deep_color"
+            android:fadingEdge="none"/>
+
+</LinearLayout>

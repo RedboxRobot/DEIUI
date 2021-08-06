@@ -1,0 +1,10 @@
+<resources>
+    <string name="deiui_app_name">DEIUI</string>
+    <string name="deiui_confirm">"确定"</string>
+    <string name="deiui_cancel">取消</string>
+    <string name="deiui_i_know">知道了</string>
+    <string name="deiui_clear_empty">清空</string>
+    <string name="deiui_empty">" "</string>
+    <string name="deiui_activity_entrance">点击入口</string>
+    <string name="deiui_menu_search">"搜索"</string>
+</resources>

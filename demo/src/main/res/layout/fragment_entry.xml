@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <Button
+            android:layout_marginTop="10dp"
+            android:id="@+id/search_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="搜索框"/>
+
+    <Button
+            android:layout_marginTop="10dp"
+            android:id="@+id/btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="按钮"/>
+
+    <Button
+            android:layout_marginTop="10dp"
+            android:id="@+id/list_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="列表"/>
+
+    <Button
+            android:layout_marginTop="10dp"
+            android:id="@+id/select_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="选择框"/>
+
+    <Button
+            android:layout_marginTop="10dp"
+            android:id="@+id/operate_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="操作面板"/>
+
+    <Button
+            android:layout_marginTop="10dp"
+            android:id="@+id/form_btn"
+            android:text="表单录入"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+    <Button
+            android:layout_marginTop="10dp"
+            android:id="@+id/share_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="分享"/>
+</LinearLayout>

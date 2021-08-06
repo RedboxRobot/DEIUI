@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="18dp"
+    android:layout_marginBottom="10dp"
+    android:gravity="right"
+    android:orientation="horizontal">
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/negative_tv"
+        style="@style/deiui_dialog_negative_text_style"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/deiui_dialog_textview_touch_ripple"
+        android:text="@string/deiui_cancel"
+        android:textSize="@dimen/normal_text_size"
+        android:visibility="gone" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/positive_tv"
+        style="@style/deiui_dialog_positive_text_style"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:background="@drawable/deiui_dialog_textview_touch_ripple"
+        android:text="@string/deiui_confirm"
+        android:visibility="gone" />
+
+</LinearLayout>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--列表单标题,带图和不带图-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:gravity="center_vertical"
+              android:id="@+id/item_single_title_root"
+              android:background="@color/deiui_white"
+              android:layout_height="45dp">
+
+    <ImageView
+            android:id="@+id/item_iv"
+            android:layout_marginLeft="15dp"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:visibility="gone"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/item_title_tv"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="多行列表"
+            android:layout_marginLeft="15dp"
+            android:textSize="16sp"
+            android:textColor="@color/colorAccent"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/item_desc_tv"
+            android:gravity="end"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end|center_vertical"
+            android:text="暗提示"
+            android:textColor="@color/color_cc"
+            android:textSize="16sp"
+            android:drawableRight="@drawable/deiui_ic_arrows"
+            android:drawablePadding="10dp"
+            android:paddingRight="15dp"/>
+</LinearLayout>

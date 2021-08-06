@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <!--单次操作完成后，不可点击态-->
+    <item android:state_enabled="false">
+        <shape>
+            <corners android:radius="11dp"/>
+            <solid android:color="#ffe6e6e6"/>
+        </shape>
+    </item>
+    <!--常态-->
+    <item>
+        <shape>
+            <corners android:radius="11dp"/>
+            <solid android:color="#ff5d85e0"/>
+        </shape>
+    </item>
+</selector>

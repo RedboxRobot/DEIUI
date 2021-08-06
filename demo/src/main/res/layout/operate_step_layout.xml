@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <com.delicloud.app.deiui.entry.DeiUiStepView
+        android:id="@+id/stepView"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginRight="15dp"
+        android:background="@drawable/shape_stepview_bg"
+        app:editable="true"
+        app:min="-10"
+        app:section="0.5"
+        app:size="big"
+        app:step="3"
+        app:stepTextSize="@dimen/text_size_24">
+
+    </com.delicloud.app.deiui.entry.DeiUiStepView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginTop="15dp"
+        android:background="@color/deiui_white">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="15dp"
+            android:layout_weight="1"
+            android:gravity="left|center_vertical"
+            android:text="文字标题"
+            android:textColor="@color/colorAccent"
+            android:textSize="15sp" />
+
+        <com.delicloud.app.deiui.entry.DeiUiStepView
+            android:layout_width="88dp"
+            android:layout_height="20dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="8dp"
+            app:max="99"
+            app:min="0"
+            app:step="10"
+            app:size="small"
+            app:stepTextSize="@dimen/text_size_15">
+
+        </com.delicloud.app.deiui.entry.DeiUiStepView>
+    </LinearLayout>
+</LinearLayout>

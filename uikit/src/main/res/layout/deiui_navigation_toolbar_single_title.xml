@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?><!--单标题Toolbar-->
+<androidx.appcompat.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/single_title_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/deiui_white"
+        app:navigationIcon="@drawable/deiui_ic_back"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        app:contentInsetStartWithNavigation="10dp"
+        app:title="">
+
+    <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/toolbar_title_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_marginRight="10dp"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:singleLine="true"
+            android:text="标题"
+            android:textColor="@color/deiui_navigation_text_selected_color"
+            android:textSize="19sp"
+            android:textStyle="bold" />
+</androidx.appcompat.widget.Toolbar>

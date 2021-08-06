@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.zhy.view.flowlayout.TagFlowLayout
+        android:id="@+id/tagflowlayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:max_select="1">
+
+    </com.zhy.view.flowlayout.TagFlowLayout>
+    <!--小圆点-->
+    <com.delicloud.app.deiui.display.DeiUiNotifyView
+        android:id="@+id/red_point_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tagflowlayout"
+        app:notify_type="point" />
+    <!--圆点个位数-->
+    <com.delicloud.app.deiui.display.DeiUiNotifyView
+        android:id="@+id/red_point_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:gravity="center"
+        app:layout_constraintLeft_toRightOf="@+id/red_point_1"
+        app:layout_constraintTop_toBottomOf="@+id/tagflowlayout"
+        app:notify_type="number" />
+    <!--圆角两位数-->
+    <com.delicloud.app.deiui.display.DeiUiNotifyView
+        android:id="@+id/red_point_3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        app:notify_type="number"
+        app:layout_constraintLeft_toRightOf="@+id/red_point_2"
+        app:layout_constraintTop_toBottomOf="@+id/tagflowlayout" />
+    <!--圆角更多-->
+    <com.delicloud.app.deiui.display.DeiUiNotifyView
+        android:id="@+id/notify_more"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:gravity="center"
+        app:notify_type="number"
+        app:notify_value="100"
+        app:notify_text_size="16sp"
+        app:layout_constraintLeft_toRightOf="@+id/red_point_3"
+        app:layout_constraintTop_toBottomOf="@+id/tagflowlayout" />
+
+    <TextView
+        android:id="@+id/emblem_red"
+        style="@style/DeiUiRedEmblemStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:text="推荐"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/red_point_1" />
+
+    <TextView
+        android:id="@+id/emblem_blue"
+        style="@style/DeiUiBlueEmblemStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:text="更新"
+        app:layout_constraintLeft_toRightOf="@id/emblem_red"
+        app:layout_constraintTop_toTopOf="@+id/emblem_red" />
+
+    <TextView
+        android:id="@+id/emblem_inactive"
+        style="@style/DeiUiInActiveEmblemStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:text="未激活"
+        app:layout_constraintLeft_toRightOf="@+id/emblem_blue"
+        app:layout_constraintTop_toTopOf="@+id/emblem_red" />
+</androidx.constraintlayout.widget.ConstraintLayout>

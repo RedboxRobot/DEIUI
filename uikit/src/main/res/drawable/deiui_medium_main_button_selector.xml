@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <!--不可点击态-->
+    <item android:state_enabled="false">
+        <shape>
+            <corners android:radius="3dp"/>
+            <solid android:color="#ffe6e6e6"/>
+        </shape>
+    </item>
+    <!--点击时状态-->
+    <item android:state_pressed="true">
+        <shape>
+            <corners android:radius="3dp"/>
+            <solid android:color="#ff295acc"/>
+        </shape>
+    </item>
+    <!--常态-->
+    <item>
+        <shape>
+            <corners android:radius="3dp"/>
+            <solid android:color="#ff5d85e0"/>
+        </shape>
+    </item>
+</selector>

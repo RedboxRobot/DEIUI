@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="ResourceName">
+
+    <!--大按钮,主按钮-->
+    <style name="DeiUiBigMainButtonStyle" parent="Widget.AppCompat.Button.Borderless">
+        <item name="android:textSize">@dimen/text_size_19</item>
+        <item name="android:textColor">@color/deiui_main_button_text_color_selector</item>
+        <item name="android:background">@drawable/deiui_main_button_selector</item>
+        <item name="android:shadowRadius">0</item>
+    </style>
+    <!--大按钮,次按钮-->
+    <style name="DeiUiBigSecondlyButtonStyle" parent="Widget.AppCompat.Button.Borderless">
+        <item name="android:textSize">19sp</item>
+        <item name="android:textColor">@color/deiui_secondly_button_text_color_selector</item>
+        <item name="android:background">@drawable/deiui_secondly_button_selector</item>
+    </style>
+
+    <!--警告按钮-->
+    <style name="DeiUiWarnButtonStyle" parent="Widget.AppCompat.Button.Borderless">
+        <item name="android:textSize">19sp</item>
+        <item name="android:textColor">@color/deiui_warn_button_text_color</item>
+        <item name="android:background">@drawable/deiui_warn_button_selector</item>
+    </style>
+
+    <!--中等主按钮-->
+    <style name="DeiUiMediumMainButtonStyle" parent="Widget.AppCompat.Button.Borderless">
+        <item name="android:textSize">@dimen/text_size_16</item>
+        <item name="android:textColor">@color/deiui_main_button_text_color_selector</item>
+        <item name="android:background">@drawable/deiui_medium_main_button_selector</item>
+    </style>
+
+    <!--中等次按钮-->
+    <style name="DeiUiMediumSecondlyButtonStyle" parent="Widget.AppCompat.Button.Borderless">
+        <item name="android:textSize">@dimen/text_size_16</item>
+        <item name="android:textColor">@color/deiui_secondly_button_text_color_selector</item>
+        <item name="android:background">@drawable/deiui_medium_secondly_button_selector</item>
+    </style>
+
+    <!--单次点击主按钮-->
+    <style name="DeiUiSingleClickMainButtonStyle" parent="Widget.AppCompat.Button.Borderless">
+        <item name="android:textSize">@dimen/text_size_13</item>
+        <item name="android:textColor">@color/deiui_main_button_text_color_selector</item>
+        <item name="android:background">@drawable/deiui_single_click_main_button_style</item>
+    </style>
+
+    <!--单次点击二级按钮-->
+    <style name="DeiUiSingleClickSecondlyButtonStyle" parent="Widget.AppCompat.Button.Borderless">
+        <item name="android:textSize">@dimen/text_size_13</item>
+        <item name="android:textColor">@color/deiui_secondly_button_text_color_selector</item>
+        <item name="android:background">@drawable/deiui_single_click_secondly_button_selector</item>
+    </style>
+
+    <!--单次点击三级按钮-->
+    <style name="DeiUiSingleClickThirdButtonStyle" parent="Widget.AppCompat.Button.Borderless">
+        <item name="android:textSize">@dimen/text_size_13</item>
+        <item name="android:textColor">@color/deiui_third_button_text_color</item>
+        <item name="android:background">@drawable/deiui_single_click_third_button_selector</item>
+    </style>
+
+    <!--滑动按钮-->
+    <declare-styleable name="DeiUiSwitchButton">
+        <!--开关打开背景-->
+        <attr name="switch_on_bg" format="reference" />
+        <!--开关关闭背景        -->
+        <attr name="switch_off_bg" format="reference" />
+        <!--开关滑轮-->
+        <attr name="slip_src" format="reference" />
+    </declare-styleable>
+</resources>

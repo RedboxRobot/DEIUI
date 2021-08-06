@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/deiui_alert_dialog_root"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/deiui_dialog_radius_2dp_bg"
+        android:orientation="vertical"
+        android:paddingLeft="23dp"
+        android:paddingTop="23dp"
+        android:paddingRight="27dp"
+        android:paddingBottom="10dp">
+
+    <include layout="@layout/deiui_alert_dialog_title_message" />
+
+    <ProgressBar
+            android:id="@+id/dialog_progress_bar"
+            style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:layout_marginTop="15dp"
+            android:progress="0"
+            android:progressDrawable="@drawable/deiui_progress_horizontal_blue"
+            android:visibility="gone"
+            tools:max="100" />
+
+    <include layout="@layout/deiui_alert_dialog_bottom_button" />
+
+
+</LinearLayout>

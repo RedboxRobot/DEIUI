@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+        android:color="@color/deiui_touch_color">
+    <!-- 上面的颜色是点击时波纹的颜色 -->
+    <solid android:color="@color/deiui_main_color" />
+    <corners android:radius="23dp" />
+</shape>

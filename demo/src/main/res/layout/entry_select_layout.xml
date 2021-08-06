@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:orientation="vertical"
+              android:id="@+id/select_ll"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              tools:ignore="MissingDefaultResource">
+
+    <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/img_rb_rv"
+            android:layout_marginTop="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+
+    <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="带图单选框"/>
+    <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rb_rv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+    <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="无图单选框"
+            android:gravity="center"/>
+    <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/img_cb_rv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+    <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="带图复选框"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/cb_rv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+    <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="无图复选框"/>
+</LinearLayout>

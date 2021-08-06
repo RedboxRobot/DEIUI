@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/nav_toolbar_single_title_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="单标题"
+            />
+    <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/nav_toolbar_double_title_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="双标题"
+          />
+    <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/nav_toolbar_right_top_menu_float"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="右侧菜单弹框浮出"
+            />
+    <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/nav_toolbar_right_top_menu_multi_choice"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="右侧菜单弹框多选项"
+            />
+</LinearLayout>

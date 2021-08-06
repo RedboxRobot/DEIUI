@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:background="#FFFBEE"
+            android:layout_height="wrap_content">
+
+        <ImageView
+                android:layout_marginLeft="12dp"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:src="@drawable/ic_volume_mute_black_24dp"/>
+
+        <com.delicloud.app.deiui.display.DeiUiMarqueeView
+                android:id="@+id/marquee_prize"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="35dp"
+                app:mv_text_startLocation="0"
+                >
+
+        </com.delicloud.app.deiui.display.DeiUiMarqueeView>
+        <ImageView
+                android:paddingRight="12dp"
+                android:paddingLeft="8dp"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:src="@drawable/deiui_ic_arrows"/>
+    </LinearLayout>
+
+    <com.delicloud.app.deiui.display.DeiUiMarqueeView
+            android:layout_marginTop="16dp"
+            android:id="@+id/marquee_warn"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:background="#FC9592"
+            android:paddingLeft="12dp"
+            app:mv_text_startLocation="0"
+            app:mv_text_color="@color/white">
+    </com.delicloud.app.deiui.display.DeiUiMarqueeView>
+</LinearLayout>

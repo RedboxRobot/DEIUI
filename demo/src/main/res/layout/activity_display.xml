@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".activity.DisplayDetailActivity">
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+<include layout="@layout/deiui_navigation_toolbar_single_title"/>
+
+        <include
+                android:id="@+id/card_layout"
+                layout="@layout/display_card_layout"
+                android:visibility="gone"/>
+
+        <include
+                android:id="@+id/notice_layout"
+                layout="@layout/display_notice_layout"
+                android:visibility="gone"/>
+
+        <include
+                android:id="@+id/announciate_layout"
+                layout="@layout/display_announciate_layout"
+                android:visibility="gone"/>
+
+        <include
+                android:id="@+id/step_layout"
+                layout="@layout/display_step_layout"
+                android:visibility="gone"/>
+
+        <include
+                android:id="@+id/progress_layout"
+                layout="@layout/display_progress_layout"
+                android:visibility="gone"/>
+    </LinearLayout>
+</ScrollView>

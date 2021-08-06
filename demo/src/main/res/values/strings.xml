@@ -1,0 +1,38 @@
+<resources>
+    <string name="app_name">DEIUI</string>
+
+    <string name="Layout">Layout</string>
+    <string name="Navigation">Navigation</string>
+    <string name="Entry">Entry</string>
+    <string name="Display">Display</string>
+    <string name="Feedback">Feedback</string>
+
+    <string name="LayoutCn">布局</string>
+    <string name="NavigationCn">导航</string>
+    <string name="EntryCn">录入</string>
+    <string name="DisplayCn">展示</string>
+    <string name="FeedbackCn">反馈</string>
+
+    <string name="DialogTitle">单行标题</string>
+    <string name="DialogMessage">描述文字的字数最好控制在三行内，并且文字字段最右侧不能有标点符号。</string>
+    <string name="DialogPositiveText">主操作</string>
+    <string name="DialogNegativeText">辅助操作</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="popup_window_item_1">目录1</string>
+    <string name="popup_window_item_2">目录2</string>
+    <string name="popup_window_item_3">目录3</string>
+    <string name="popup_window_item_4">目录4</string>
+    <string name="popup_window_item_5">目录5</string>
+
+    <string-array name="list_names">
+        <item>单标题</item>
+        <item>单描述</item>
+        <item>多描述</item>
+        <item>小图文</item>
+        <item>中图文</item>
+        <item>大图文</item>
+    </string-array>
+
+</resources>

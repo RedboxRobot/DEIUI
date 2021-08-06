@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:paddingBottom="15dp">
+
+    <include layout="@layout/deiui_display_card_item_single_title"/>
+
+    <View
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"/>
+
+    <include layout="@layout/deiui_display_card_item_center_title"/>
+
+    <View
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"/>
+
+    <include layout="@layout/deiui_display_card_item_double_title"/>
+
+    <View
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"/>
+
+    <include
+            layout="@layout/deiui_diaplay_card_function_horization"/>
+
+    <View
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"/>
+
+    <include
+            layout="@layout/deiui_display_card_function_vertical"
+            android:layout_marginBottom="20dp"
+            android:layout_width="80dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_height="wrap_content"/>
+
+</LinearLayout>

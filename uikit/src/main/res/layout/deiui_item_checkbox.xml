@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--多选项-->
+<androidx.constraintlayout.widget.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:background="@color/deiui_white"
+        android:layout_width="match_parent"
+        android:layout_height="45dp">
+
+    <CheckBox
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_marginStart="15dp"
+            android:id="@+id/item_checkbox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:button="@drawable/deiui_checkbox_selector"
+            android:clickable="false"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/item_checkbox_tv"
+            app:layout_constraintLeft_toRightOf="@+id/item_checkbox"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:textColor="@color/colorAccent"
+            android:textSize="@dimen/text_size_16"
+            android:text="选项一"
+            android:layout_marginStart="10dp"
+            android:drawableLeft="@drawable/deiui_ic_perm_24dp"
+            android:drawablePadding="10dp"
+            android:gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

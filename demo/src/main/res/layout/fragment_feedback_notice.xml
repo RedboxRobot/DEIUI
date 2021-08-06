@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:tools="http://schemas.android.com/tools"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             tools:context=".fragment.FeedbackNoticeFragment">
+
+    <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+            <Button
+                    android:layout_marginTop="15dp"
+                    android:id="@+id/loading_rect_btn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="加载中"
+                    />
+            <Button
+                    android:layout_marginTop="15dp"
+                    android:id="@+id/success_btn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="成功提示"
+                    />
+            <Button
+                    android:layout_marginTop="15dp"
+                    android:id="@+id/error_btn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="错误"
+                    />
+            <Button
+                    android:layout_marginTop="15dp"
+                    android:id="@+id/warning_btn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="警告"
+                    />
+            <Button
+                    android:layout_marginTop="15dp"
+                    android:id="@+id/text_btn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="文本提示"
+                    />
+        </LinearLayout>
+    </ScrollView>
+
+</FrameLayout>

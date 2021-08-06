@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--绿色进度条-->
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:id="@android:id/background">
+        <shape>
+            <corners android:radius="3dp" />
+            <stroke
+                    android:width="0.5dp"
+                    android:color="#ffe5e5e5" />
+            <gradient
+                    android:angle="270"
+                    android:centerColor="#ffe5e5e5"
+                    android:centerY="0.75"
+                    android:endColor="#ffe5e5e5"
+                    android:startColor="#ffe5e5e5" />
+        </shape>
+    </item>
+
+    <item android:id="@android:id/progress">
+        <scale
+                android:scaleWidth="100%">
+            <shape>
+                <corners android:radius="3dp" />
+                <stroke
+                        android:width="0.5dp"
+                        android:color="@color/green_progress_color" />
+                <gradient
+                        android:angle="270"
+                        android:centerColor="@color/green_progress_color"
+                        android:centerY="0.75"
+                        android:endColor="@color/green_progress_color"
+                        android:startColor="@color/green_progress_color" />
+            </shape>
+        </scale>
+    </item>
+
+</layer-list>

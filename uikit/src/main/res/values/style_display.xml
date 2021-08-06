@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!--基本tag样式-->
+    <style name="DeiUiTagStyle">
+        <item name="android:textColor">@color/deiui_tag_text_color</item>
+        <item name="android:background">@drawable/deiui_tag_bg_selector</item>
+        <item name="android:padding">5dp</item>
+    </style>
+
+    <!--徽标通用尺寸-->
+    <style name="DeiUiEmblemDimensStyle">
+        <item name="android:textSize">12sp</item>
+        <item name="android:paddingLeft">6dp</item>
+        <item name="android:paddingRight">6dp</item>
+        <item name="android:paddingTop">2dp</item>
+        <item name="android:paddingBottom">2dp</item>
+    </style>
+    <!--红色徽标-->
+    <style name="DeiUiRedEmblemStyle" parent="DeiUiEmblemDimensStyle">
+        <item name="android:background">@drawable/deiui_emblem_red</item>
+        <item name="android:textColor">@color/deiui_red_point</item>
+
+    </style>
+
+    <!--蓝色徽标-->
+    <style name="DeiUiBlueEmblemStyle" parent="DeiUiEmblemDimensStyle">
+        <item name="android:background">@drawable/deiui_emblem_blue</item>
+        <item name="android:textColor">@color/deiui_emblem_text_blue_color</item>
+    </style>
+
+    <!--未激活徽标-->
+    <style name="DeiUiInActiveEmblemStyle" parent="DeiUiEmblemDimensStyle">
+        <item name="android:background">@drawable/deiui_emblem_inactive</item>
+        <item name="android:textColor">@color/color_cc</item>
+    </style>
+
+    <!--跑马灯属性-->
+    <declare-styleable name="DeiUiMarqueeView" tools:ignore="ResourceName">
+
+        <attr name="mv_repeat_type" format="enum">
+            <enum name="repeat_once" value="0" /><!-- 播放一次 -->
+            <enum name="repeat_interval" value="1" />  <!--连续播放 循环结束再继续下次循环-->
+            <enum name="repeat_continuous" value="2" />  <!--连续播放 到末尾直接继续下次循环-->
+        </attr><!--循环模式-->
+
+        <attr name="mv_text_distance" format="integer" /><!--每个item之间的距离-->
+        <attr name="mv_text_startLocation" format="float" /><!--开始的起始位置 按距离控件左边的百分比 0~1之间 -->
+
+        <attr name="mv_text_speed" format="float" /><!--播放速度 也就是文字滚动速度-->
+        <attr name="mv_text_color" format="color|reference" /><!-- 文字颜色 -->
+        <attr name="mv_text_size" format="float" /><!-- 文字大小 -->
+
+        <attr name="mv_click_stop" format="boolean" /><!--是否点击暂停-->
+        <attr name="mv_resetLocation" format="boolean" /><!--重新改变内容的时候 ， 是否初始化 位置，默认为true，改变-->
+
+
+    </declare-styleable>
+
+    <!--    新消息小图标通知属性-->
+    <declare-styleable name="DeiUiNotifyView" tools:ignore="ResourceName">
+        <attr name="notify_type" format="enum">
+            <enum name="point" value="0" />
+            <enum name="number" value="1" />
+        </attr>
+        <attr name="notify_max" format="integer" />
+        <attr name="notify_color" format="color" />
+        <attr name="notify_value" format="integer" />
+        <attr name="notify_text_size" format="dimension" />
+    </declare-styleable>
+</resources>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--双标题和viewpager配合使用Toolbar-->
+<androidx.appcompat.widget.Toolbar
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/navigation_double_title_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:minHeight="?attr/actionBarSize"
+        android:background="@color/deiui_white"
+        android:theme="@style/ThemeOverlay.AppCompat.Light"
+        app:navigationIcon="@drawable/deiui_ic_back"
+        app:title="">
+    <com.google.android.material.tabs.TabLayout
+            android:id="@+id/navigation_double_title_tabLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/deiui_actionbar_height"
+            android:background="@color/deiui_white"
+            android:layout_gravity="center"
+            android:fillViewport="false"
+            app:tabGravity="center"
+            app:tabIndicatorColor="@android:color/transparent"
+            app:tabIndicatorHeight="0dp"
+            app:tabTextAppearance="@style/DeiUiNavigationTextAppearance"
+            app:tabTextColor="@color/deiui_navigation_text_normal_color"
+            app:tabSelectedTextColor="@color/deiui_navigation_text_selected_color"
+            app:tabMode="fixed"/>
+</androidx.appcompat.widget.Toolbar>
+

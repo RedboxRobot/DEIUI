@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--垂直步骤条警告图标-->
+<shape xmlns:android="http://schemas.android.com/apk/res/android" android:shape="oval">
+    <solid android:color="@color/deiui_white"/>
+    <size android:width="18dp" android:height="18dp"/>
+    <stroke android:width="2dp" android:color="@color/deiui_red_point"/>
+</shape>

@@ -1,0 +1,245 @@
+<resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="ResourceName">
+
+    <!-- Base application theme. -->
+    <style name="DeiUiBaseTheme" parent="Theme.AppCompat.Light">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="android:windowBackground">@color/deiui_window_background</item>
+        <!--<item appName="android:textColorPrimary">@color/high_level_text_color</item>-->
+        <item name="toolbarNavigationButtonStyle">@style/DeiUiToolbarNavigationButtonStyle</item>
+        <item name="android:windowContentTransitions" tools:targetApi="lollipop">true</item>
+        <item name="colorControlHighlight">@color/colorAccent</item>
+        <item name="colorAccent">@color/deiui_main_color</item>
+    </style>
+
+    <style name="DeiUiBaseTheme.NoActionBar" parent="DeiUiBaseTheme">
+        <item name="windowActionModeOverlay">true</item>
+        <item name="windowActionBarOverlay">true</item>
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="colorAccent">@color/deiui_main_color</item>
+    </style>
+    <!-- navigation style -->
+    <style name="DeiUiToolbarNavigationButtonStyle" parent="@style/Widget.AppCompat.Toolbar.Button.Navigation">
+        <!--<item appName="android:minWidth">0dp</item>-->
+        <!--<item appName="android:paddingRight">10dp</item>-->
+        <!--<item appName="android:paddingLeft">10dp</item>-->
+    </style>
+    <!-- 导航栏可切换文字样式. -->
+    <style name="DeiUiNavigationTextAppearance" parent="TextAppearance.AppCompat.Button">
+        <item name="android:textSize">19sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="DeiUiTabLayoutStyle" parent="Base.Widget.Design.TabLayout">
+        <item name="tabBackground">@color/deiui_white</item>
+        <item name="tabIndicatorColor">@color/deiui_main_color</item>
+        <item name="tabIndicatorHeight">2dp</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/deiui_tab_text_normal_color</item>
+    </style>
+
+    <declare-styleable name="DeiUiConstraintHeightListView">
+        <attr name="listMaxHeight" format="dimension" />
+    </declare-styleable>
+
+    <!--布局页面的输入框view的text-->
+    <style name="deiui_layout_input_tv_title">
+        <item name="android:textSize">16dp</item>
+        <item name="android:includeFontPadding">false</item>
+        <item name="android:textColor">@color/color_33</item>
+        <item name="android:ellipsize">end</item>
+    </style>
+
+    <!--布局页面输入框view的edit-->
+    <style name="deiui_layout_input_et_content">
+        <item name="android:textSize">16dp</item>
+        <item name="android:includeFontPadding">false</item>
+        <item name="android:textColor">@color/color_33</item>
+        <item name="android:textColorHint">@color/color_cc</item>
+        <item name="android:lines">1</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:inputType">text</item>
+        <item name="android:background">@null</item>
+    </style>
+
+    <!--布局页面组合输入框view的edit，不限制一行的-->
+    <style name="deiui_layout_input_et_content_nolines">
+        <item name="android:textSize">16dp</item>
+        <item name="android:includeFontPadding">false</item>
+        <item name="android:textColor">@color/color_33</item>
+        <item name="android:textColorHint">@color/color_cc</item>
+        <item name="android:background">@null</item>
+        <item name="android:ellipsize">end</item>
+    </style>
+
+    <!--布局页面默认的标题提示语-->
+    <style name="deiui_layout_hint_text">
+        <item name="android:textSize">13dp</item>
+        <item name="android:includeFontPadding">false</item>
+        <item name="android:textColor">@color/color_99</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:paddingLeft">15dp</item>
+    </style>
+
+
+    <!--布局页面的单行输入框的自定义view的各种属性-->
+    <declare-styleable name="DeiuiLayoutInputSingleEditText">
+        <!--显示类型-->
+        <attr name="singleShowType" format="enum">
+            <!--输入框-->
+            <enum name="edit" value="0" />
+            <!--输入框和删除按钮-->
+            <enum name="editAndImage" value="1" />
+            <!--文字和输入框-->
+            <enum name="textAndEdit" value="2" />
+            <!--文字和输入框和删除按钮-->
+            <enum name="textAndEditAndImage" value="3" />
+        </attr>
+
+        <!--对齐方式-->
+        <attr name="singleAlignType" format="enum">
+            <!--左对齐-->
+            <enum name="left" value="0" />
+            <!--两端对齐-->
+            <enum name="adjust" value="1" />
+        </attr>
+
+        <!--文字内容-->
+        <attr name="singleTextContent" format="string" />
+        <!--输入框内容-->
+        <attr name="singleEditContent" format="string" />
+        <!--输入框内容是否可以修改,默认可以修改-->
+        <attr name="singleEditContentHasAmend" format="boolean" />
+        <!--输入框hint内容-->
+        <attr name="singleEditHintContent" format="string" />
+
+        <!--输入框的左边是否是根据guideline比例固定的-->
+        <attr name="singleIsEditLeftGuidePercent" format="boolean" />
+        <!--左边guideline的偏移值-->
+        <attr name="singleEditLeftGuidePercentBias" format="float" />
+
+        <!--上边线是否显示-->
+        <attr name="singleIsShowTopView" format="boolean" />
+        <!--下边线是否显示-->
+        <attr name="singleIsShowBottomView" format="boolean" />
+
+        <!--上边线的左偏移值-->
+        <attr name="singleTopViewLeftMargin" format="integer" />
+        <!--上边线的右偏移值-->
+        <attr name="singleTopViewRightMargin" format="integer" />
+
+        <!--下边线的左偏移值-->
+        <attr name="singleBottomViewLeftMargin" format="integer" />
+        <!--下边线的右偏移值-->
+        <attr name="singleBottomViewRightMargin" format="integer" />
+
+    </declare-styleable>
+
+    <!--布局页面的单行输入框的进入下一页的自定义view的各种属性-->
+    <declare-styleable name="DeiuiLayoutInputSingleEditNext">
+
+        <!--对齐方式-->
+        <attr name="singleNextAlignType" format="enum">
+            <!--左对齐-->
+            <enum name="left" value="0" />
+            <!--两端对齐-->
+            <enum name="adjust" value="1" />
+        </attr>
+
+        <!--文字内容-->
+        <attr name="singleNextTextContent" format="string" />
+        <!--输入框内容-->
+        <attr name="singleNextEditContent" format="string" />
+        <!--输入框hint内容-->
+        <attr name="singleNextEditHintContent" format="string" />
+
+        <!--输入框内容的字体颜色-->
+        <attr name="singleNextEditContentColor" format="enum">
+            <!--33-->
+            <enum name="color_33" value="0" />
+            <!--99-->
+            <enum name="color_99" value="1" />
+        </attr>
+
+        <!--输入框的左边是否是根据guideline比例固定的-->
+        <attr name="singleNextIsEditLeftGuidePercent" format="boolean" />
+        <!--左边guideline的偏移值-->
+        <attr name="singleNextEditLeftGuidePercentBias" format="float" />
+
+        <!--上边线是否显示-->
+        <attr name="singleNextIsShowTopView" format="boolean" />
+        <!--下边线是否显示-->
+        <attr name="singleNextIsShowBottomView" format="boolean" />
+
+        <!--上边线的左偏移值-->
+        <attr name="singleNextTopViewLeftMargin" format="integer" />
+        <!--上边线的右偏移值-->
+        <attr name="singleNextTopViewRightMargin" format="integer" />
+
+        <!--下边线的左偏移值-->
+        <attr name="singleNextBottomViewLeftMargin" format="integer" />
+        <!--下边线的右偏移值-->
+        <attr name="singleNextBottomViewRightMargin" format="integer" />
+    </declare-styleable>
+
+
+    <!--布局页面的组合输入框的自定义view的各种属性-->
+    <declare-styleable name="DeiuiLayoutInputParagraphEdit">
+        <!--输入框内容-->
+        <attr name="paragraphEditContent" format="string" />
+        <!--输入框hint内容-->
+        <attr name="paragraphEditHintContent" format="string" />
+
+        <!--是否显示输入框的右下角的计数器-->
+        <attr name="paragraphIsShowCounter" format="boolean" />
+        <!--右下角计数器的最大值-->
+        <attr name="paragraphCounterMax" format="integer" />
+
+        <!--上边线是否显示-->
+        <attr name="paragraphIsShowTopView" format="boolean" />
+        <!--下边线是否显示-->
+        <attr name="paragraphIsShowBottomView" format="boolean" />
+
+        <!--上边线的左偏移值-->
+        <attr name="paragraphTopViewLeftMargin" format="integer" />
+        <!--上边线的右偏移值-->
+        <attr name="paragraphTopViewRightMargin" format="integer" />
+
+        <!--下边线的左偏移值-->
+        <attr name="paragraphBottomViewLeftMargin" format="integer" />
+        <!--下边线的右偏移值-->
+        <attr name="paragraphBottomViewRightMargin" format="integer" />
+
+    </declare-styleable>
+
+    <!--搜索框文字属性-->
+    <declare-styleable name="DeiUiSearchView">
+        <attr name="hintTextSize" format="dimension" />
+        <attr name="hintText" format="string" />
+    </declare-styleable>
+    <!--步进器-->
+    <declare-styleable name="DeiUiStepView">
+        <!--步数下限-->
+        <attr name="min" format="float" />
+        <!--步数上限-->
+        <attr name="max" format="float" />
+        <!--默认步数-->
+        <attr name="step" format="float" />
+        <!--步数文字大小-->
+        <attr name="stepTextSize" format="dimension" />
+        <attr name="stepTextColor" format="color" />
+        <!--   每次增加或减少的数字     -->
+        <attr name="section" format="float" />
+        <!--步进器大小-->
+        <attr name="size" format="enum">
+            <enum name="small" value="0" />
+            <enum name="big" value="1" />
+        </attr>
+        <attr name="editable" format="boolean" />
+        <attr name="leftDrawable" format="reference" />
+        <attr name="rightDrawable" format="reference" />
+    </declare-styleable>
+
+</resources>

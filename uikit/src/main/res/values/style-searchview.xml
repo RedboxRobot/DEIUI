@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--搜索框常态-->
+    <style name="DeiUiSearchViewNormalStyle" parent="Widget.AppCompat.EditText">
+        <item name="android:background">@drawable/deiui_text_view_button_white_border_selector</item>
+        <item name="android:clickable">true</item>
+        <item name="android:focusable">true</item>
+        <item name="android:drawableStart">@mipmap/deiui_ic_search_view_drawable</item>
+        <item name="android:drawablePadding">10dp</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:paddingLeft">10dp</item>
+        <item name="android:paddingRight">10dp</item>
+        <item name="android:text">@string/deiui_menu_search</item>
+        <item name="android:textColor">@color/deiui_low_level_text_color</item>
+        <item name="android:textSize">@dimen/text_size_14</item>
+    </style>
+    <!--搜索框激活态-->
+    <style name="DeiUiSearchViewActiveStyle" parent="Widget.AppCompat.EditText">
+        <item name="android:background">@drawable/deiui_shape_search_layout</item>
+        <item name="android:drawableStart">@mipmap/deiui_ic_search_view_drawable</item>
+        <item name="android:drawableEnd">@drawable/deiui_ic_delete</item>
+        <item name="android:drawablePadding">10dp</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:hint">@string/deiui_menu_search</item>
+        <item name="android:imeOptions">actionSearch</item>
+        <item name="android:inputType">text</item>
+        <item name="android:maxLength">20</item>
+        <item name="android:paddingStart">10dp</item>
+        <item name="android:paddingEnd">10dp</item>
+        <item name="android:textColor">@color/deiui_high_level_text_color</item>
+        <item name="android:textSize">@dimen/text_size_15</item>
+    </style>
+</resources>

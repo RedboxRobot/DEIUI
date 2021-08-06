@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--蓝色进度条-->
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <!--进度条背景-->
+    <item android:id="@android:id/background">
+        <shape>
+            <corners android:radius="2dp"/>
+            <gradient
+                    android:centerColor="@color/deiui_dialog_progress_bg_color"
+                    android:endColor="@color/deiui_dialog_progress_bg_color"
+                    android:startColor="@color/deiui_dialog_progress_bg_color"/>
+        </shape>
+    </item>
+    <!--当前进度背景-->
+    <item android:id="@android:id/progress">
+        <scale android:scaleWidth="100%">
+            <shape>
+                <corners android:radius="2dp"/>
+                <gradient
+                        android:centerColor="@color/deiui_main_color"
+                        android:endColor="@color/deiui_main_color"
+                        android:startColor="@color/deiui_main_color"/>
+            </shape>
+        </scale>
+    </item>
+
+</layer-list>

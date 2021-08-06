@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+    <!--黑色进度条-->
+    <ProgressBar
+            android:layout_margin="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:progress="50"
+            android:max="100"
+            android:min="0"
+            style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+            android:progressDrawable="@drawable/deiui_progress_horizontal_black"/>
+
+    <!--绿色进度条-->
+    <ProgressBar
+            android:layout_margin="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="4dp"
+            android:progress="50"
+            android:max="100"
+            android:min="0"
+            style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+            android:progressDrawable="@drawable/deiui_progress_horizontal_green"/>
+    <!--蓝色进度条-->
+    <ProgressBar
+            android:layout_margin="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="4dp"
+            android:progress="50"
+            android:max="100"
+            android:min="0"
+            style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+            android:progressDrawable="@drawable/deiui_progress_horizontal_blue"/>
+</LinearLayout>

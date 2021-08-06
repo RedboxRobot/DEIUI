@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="ResourceName">
+    <color name="colorPrimary">#ffffff</color>
+    <color name="colorPrimaryDark">#ffffff</color>
+    <color name="colorAccent">#333333</color>
+    <color name="deiui_main_color">#5D85E0</color>
+    <color name="deiui_white">#ffffffff</color>
+    <color name="deiui_black">#ff000000</color>
+    <color name="deiui_navigation_text_selected_color">#333333</color>
+    <color name="deiui_navigation_text_normal_color">#EAEAEA</color>
+    <color name="deiui_red_point">#FF534D</color>
+
+    <!-- background color -->
+    <color name="deiui_window_background">#f3f3f3</color>
+    <color name="deiui_high_level_white_background_color">#ffffff</color>
+    <color name="deiui_unactivated_background_color">#e6e6e6</color>
+    <color name="deiui_transparent">#00000000</color>
+    <color name="deiui_web_view_background_color">#fafafa</color>
+
+    <color name="deiui_emphasized_button_color">#5D85E0</color>
+    <color name="deiui_time_picker_title_bg_color">#CDCDCD</color>
+
+
+    <!-- text color -->
+    <color name="deiui_text_color_main">@color/deiui_main_color</color>
+    <color name="deiui_home_text_color">#ffffff</color>
+    <color name="deiui_high_level_text_color">#333333</color>
+    <color name="deiui_middle_level_text_color">#666666</color>
+    <color name="deiui_low_level_text_color">#999999</color>
+    <color name="deiui_pure_black_text_color">#000000</color>
+    <color name="deiui_disabled_text_color">#bfbfbf</color>
+    <color name="deiui_touch_color">#eaeaea</color>
+    <color name="deiui_boot_color">#78a3eb</color>
+    <color name="deiui_transparency_bg_color">#26ffffff</color>
+    <color name="deiui_timepicker_submit_text_color">#157EFB</color>
+    <color name="deiui_emblem_text_blue_color">#6ABBFD</color>
+
+    <!-- divider color -->
+    <color name="deiui_items_divider_color">#eaeaea</color>
+    <color name="deiui_items_divider_deep_color">#cccccc</color>
+    <color name="deiui_round_image_view_border_color">#d6d6d6</color>
+    <color name="deiui_dialog_divider_color">#b3b3b3</color>
+    <color name="deiui_button_divider_color">#D9D9D9</color>
+    <color name="deiui_time_picker_divider_color">#CDCDCD</color>
+
+    <color name="deiui_tab_text_normal_color">#999999</color>
+    <color name="deiui_alertdialog_line">#c6c6c6</color>
+    <color name="deiui_actionsheet_blue">#037BFF</color>
+    <color name="deiui_actionsheet_red">#FD4A2E</color>
+    <color name="deiui_actionsheet_gray">#8F8F8F</color>
+
+    <!--dialog color-->
+    <color name="deiui_dialog_positive_btn_color">#007AFF</color>
+    <color name="deiui_dialog_progress_bg_color">#CCCCCC</color>
+
+    <!--stepview color-->
+    <color name="deiui_uncompleted_color">#9fb7ed</color>
+    <color name="deiui_uncompleted_text_color">#9fb7ed</color>
+
+
+    <!--button color-->
+
+    <color name="deiui_button_pressed_gray_color">#F3F3F3</color>
+    <color name="deiui_button_unable_text_color">#BFBFBF</color>
+    <color name="deiui_warn_button_text_color">#EB1D16</color>
+    <!--kprogresshud color-->
+    <color name="deiui_kprogresshud_default_color">#b1000000</color>
+    <color name="deiui_kprogresshud_grey_color">#449E9E9E</color>
+
+
+    <!--progress color-->
+    <color name="green_progress_color">#ff02cfa1</color>
+
+    <color name="color_33">#333333</color>
+    <color name="color_66">#666666</color>
+    <color name="color_99">#999999</color>
+    <color name="color_cc">#cccccc</color>
+    <color name="color_ea">#eaeaea</color>
+    <color name="color_bf">#BFBFBF</color>
+
+</resources>

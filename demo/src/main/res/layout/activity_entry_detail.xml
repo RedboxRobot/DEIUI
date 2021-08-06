@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".activity.EntryDetailActivity">
+
+    <include
+            layout="@layout/deiui_navigation_toolbar_single_title"/>
+
+    <ViewStub
+            android:id="@+id/searchView_normal_viewStub"
+            android:layout_height="35dp"
+            android:layout_width="match_parent"
+            android:layout_margin="10dp"
+            android:layout="@layout/deiui_searchview_normal"
+            android:visibility="gone"/>
+
+    <ViewStub
+            android:id="@+id/searchView_active_ViewStub"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout="@layout/deiui_searchview_active"
+            android:visibility="gone"/>
+
+
+    <ViewStub
+            android:id="@+id/button_viewStub"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:layout="@layout/button_layout"/>
+
+    <ViewStub
+            android:id="@+id/list_viewStub"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout="@layout/entry_list_layout"
+            android:visibility="gone"/>
+
+
+    <ViewStub
+            android:id="@+id/select_viewStub"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:layout="@layout/entry_select_layout"
+            android:visibility="gone"/>
+
+    <ViewStub
+            android:layout_marginTop="10dp"
+            android:id="@+id/operate_viewStub"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout="@layout/entry_operation_board_layout"
+            android:visibility="gone"/>
+
+    <ViewStub
+            android:id="@+id/share_viewStub"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:layout="@layout/share_layout"
+            android:visibility="gone"/>
+    <ViewStub
+            android:id="@+id/form_viewStub"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout="@layout/fragment_layout"
+            android:visibility="gone"/>
+</LinearLayout>

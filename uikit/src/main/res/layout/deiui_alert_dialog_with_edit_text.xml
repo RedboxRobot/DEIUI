@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/easy_edit_dialog_root"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:background="@color/deiui_home_text_color"
+    android:orientation="vertical"
+    android:paddingLeft="23dp"
+    android:paddingTop="23dp"
+    android:paddingRight="23dp"
+    android:paddingBottom="13dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/dialog_title_tv"
+            style="@style/deiui_dialog_title_text_style"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:layout_toRightOf="@+id/easy_dialog_title_button"
+            android:ellipsize="end"
+            android:gravity="left"
+            android:includeFontPadding="false"
+            android:visibility="gone"
+            tools:text="标题" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/desc_tv"
+            style="@style/deiui_dialog_message_text_style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/dialog_title_tv"
+            android:layout_alignLeft="@+id/dialog_title_tv"
+            android:gravity="top"
+            android:includeFontPadding="false"
+            android:paddingBottom="20dp"
+            android:visibility="gone"
+            tools:text="描述文字控制在三行" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/easy_alert_dialog_edit_text"
+            style="@style/deiui_easy_dialog_edit_text_style"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="bottom"
+            android:includeFontPadding="false"
+            android:maxLength="50"
+            android:maxLines="4"
+            android:minHeight="36dp"
+            android:textColor="@color/deiui_high_level_text_color" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/edit_text_length"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignRight="@+id/easy_alert_dialog_edit_text"
+            android:layout_marginRight="5dp"
+            android:textSize="@dimen/text_size_14"
+            android:layout_centerVertical="true"
+            android:textColor="@color/color_cc"
+            android:visibility="gone"/>
+    </RelativeLayout>
+
+    <include layout="@layout/deiui_alert_dialog_bottom_button" />
+</LinearLayout>

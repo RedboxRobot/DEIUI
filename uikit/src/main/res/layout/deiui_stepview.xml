@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?><!--步进器-->
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:minWidth="88dp"
+    android:minHeight="20dp"
+    >
+
+    <ImageView
+        android:id="@+id/des_iv"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:scaleType="fitCenter"
+        android:src="@drawable/deiui_stepview_des_selector"
+        app:layout_constraintDimensionRatio="w,1:1"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+    <EditText
+        android:id="@+id/step_tv"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:background="@null"
+        android:gravity="center"
+        android:inputType="number"
+        android:maxLength="7"
+        android:textColor="@color/colorAccent"
+        android:textCursorDrawable="@null"
+        android:textSize="24sp"
+        app:layout_constraintHorizontal_weight="1"
+        app:layout_constraintLeft_toRightOf="@+id/des_iv"
+        app:layout_constraintRight_toLeftOf="@+id/inc_iv"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/inc_iv"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:src="@drawable/deiui_stepview_inc_selector"
+        app:layout_constraintDimensionRatio="w,1:1"
+        android:scaleType="fitCenter"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

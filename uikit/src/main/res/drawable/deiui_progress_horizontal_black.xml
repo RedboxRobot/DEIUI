@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--黑色进度条-->
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <!--进度条背景-->
+    <item android:id="@android:id/background">
+        <shape>
+            <corners android:radius="3dp"/>
+            <gradient
+                    android:centerColor="@color/deiui_white"
+                    android:endColor="@color/deiui_white"
+                    android:startColor="@color/deiui_white"/>
+            <stroke android:color="@color/color_99" android:width="1dp"/>
+        </shape>
+    </item>
+    <!--当前进度背景-->
+    <item android:id="@android:id/progress" android:top="3dp" android:left="3dp" android:bottom="3dp">
+        <scale android:scaleWidth="100%">
+            <shape >
+                <corners android:topLeftRadius="3dp" android:bottomLeftRadius="3dp" android:topRightRadius="0dp" android:bottomRightRadius="0dp"/>
+                <gradient
+                        android:centerColor="@color/deiui_black"
+                        android:endColor="@color/deiui_black"
+                        android:startColor="@color/deiui_black"/>
+            </shape>
+        </scale>
+    </item>
+</layer-list>

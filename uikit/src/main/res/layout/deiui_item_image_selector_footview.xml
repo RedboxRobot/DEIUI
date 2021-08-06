@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--图片选择footer-->
+<com.delicloud.app.deiui.entry.DeiUiSquareItemLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/add_photo"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/deiui_shape_image_selector_footer_bg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+    <ImageView
+            android:id="@+id/add_iv"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="16dp"
+            android:layout_centerHorizontal="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/deiui_bt_add"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="相机/相册"
+            android:layout_below="@+id/add_iv"
+            android:layout_centerHorizontal="true"
+            android:textSize="12sp"
+            android:textColor="@color/color_99"/>
+</com.delicloud.app.deiui.entry.DeiUiSquareItemLayout>

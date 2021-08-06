@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/deiui_dialog_radius_2dp_bg"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/dialog_iv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:maxWidth="70dp"
+        android:maxHeight="70dp" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/dialog_title_tv"
+        style="@style/deiui_dialog_title_text_style"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:visibility="gone"
+        tools:text="标题" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/desc_tv"
+        style="@style/deiui_dialog_message_text_style"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="25dp"
+        android:layout_marginBottom="22dp"
+        android:visibility="gone"
+        android:gravity="center"
+        tools:text="说明当前状态、提示用户解决方案,最好不要超过两行" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/deiui_items_divider_deep_color" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/positive_tv"
+        style="@style/deiui_dialog_button_text_style_highlight"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/deiui_confirm" />
+</LinearLayout>

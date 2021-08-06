@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <!--不可点击态
+    enable要放在首位，前面匹配便不再往下进行-->
+    <item android:state_enabled="false">
+        <shape android:shape="rectangle">
+            <stroke android:width="1dp" android:color="#59cccccc"/>
+            <corners android:radius="3dp"/>
+        </shape>
+    </item>
+    <!--点击时状态-->
+    <item android:state_pressed="true">
+        <shape android:shape="rectangle">
+            <solid android:color="#fff4f7ff"/>
+            <stroke android:width="1px" android:color="#595d85e0"/>
+            <corners android:radius="3dp"/>
+        </shape>
+    </item>
+    <!--常态-->
+    <item>
+        <shape android:shape="rectangle">
+            <stroke android:width="1px" android:color="#595d85e0"/>
+            <corners android:radius="3dp"/>
+        </shape>
+    </item>
+</selector>

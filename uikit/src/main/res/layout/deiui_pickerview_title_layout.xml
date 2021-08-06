@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--时间选择器标题-->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/rv_topbar"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:background="@drawable/deiui_shape_pickerview_title">
+
+    <Button
+            android:id="@+id/btnCancel"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@android:color/transparent"
+            android:gravity="left|center_vertical"
+            android:paddingLeft="@dimen/pickerview_topbar_padding"
+            android:text="@string/pickerview_cancel"
+            android:textColor="@color/deiui_timepicker_submit_text_color"
+            android:textSize="@dimen/text_size_16" />
+
+    <TextView
+            android:id="@+id/tvTitle"
+            android:layout_width="match_parent"
+            android:gravity="center"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/btnSubmit"
+            android:layout_toRightOf="@+id/btnCancel"
+            android:textColor="@color/pickerview_topbar_title"
+            android:textSize="@dimen/pickerview_topbar_title_textsize" />
+
+    <Button
+            android:id="@id/btnSubmit"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:background="@android:color/transparent"
+            android:gravity="right|center_vertical"
+            android:paddingRight="@dimen/pickerview_topbar_padding"
+            android:text="@string/pickerview_submit"
+            android:textColor="@color/deiui_timepicker_submit_text_color"
+            android:textSize="@dimen/text_size_16" />
+</RelativeLayout>

@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--弹窗标题文字样式-->
+    <style name="deiui_dialog_title_text_style">
+        <item name="android:textSize">@dimen/dialog_title_size</item>
+        <item name="android:textColor">@color/deiui_high_level_text_color</item>
+    </style>
+    <!--弹窗描述信息文字样式-->
+    <style name="deiui_dialog_message_text_style">
+        <item name="android:textSize">@dimen/dialog_message_text_size</item>
+        <item name="android:textColor">@color/deiui_high_level_text_color</item>
+        <item name="android:gravity">left</item>
+    </style>
+    <!--弹窗默认样式-->
+    <style name="deiui_dialog_default_style" parent="@android:style/Theme.Dialog">
+        <item name="android:windowBackground">@color/deiui_transparent</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:backgroundDimEnabled">true</item>
+    </style>
+    <!--弹窗辅助按钮文字样式-->
+    <style name="deiui_dialog_negative_text_style">
+        <item name="android:textSize">@dimen/normal_text_size</item>
+        <item name="android:textColor">@color/deiui_low_level_text_color</item>
+        <item name="android:background">@drawable/deiui_dialog_list_item_selector</item>
+    </style>
+    <!--弹窗主按钮文字样式-->
+    <style name="deiui_dialog_positive_text_style">
+        <item name="android:textSize">@dimen/normal_text_size</item>
+        <item name="android:textColor">@color/deiui_main_color</item>
+        <item name="android:background">@drawable/deiui_dialog_list_item_selector</item>
+    </style>
+
+    <style name="deiui_dialog_button_text_style">
+        <item name="android:textSize">@dimen/normal_text_size</item>
+        <item name="android:textColor">@color/deiui_low_level_text_color</item>
+        <item name="android:background">@drawable/deiui_dialog_list_item_selector</item>
+        <item name="android:paddingTop">@dimen/custom_dialog_padding_vertical</item>
+        <item name="android:paddingBottom">@dimen/custom_dialog_padding_vertical</item>
+    </style>
+
+    <style name="deiui_dialog_button_text_style_highlight">
+        <item name="android:textSize">@dimen/normal_text_size</item>
+        <item name="android:textColor">@color/deiui_main_color</item>
+        <item name="android:background">@drawable/deiui_dialog_list_item_selector</item>
+        <item name="android:paddingTop">@dimen/custom_dialog_padding_vertical</item>
+        <item name="android:paddingBottom">@dimen/custom_dialog_padding_vertical</item>
+    </style>
+
+    <!-- 右下角有输入字符长度限制 用于对话框 -->
+    <style name="deiui_easy_dialog_edit_text_style" parent="@android:style/Widget.EditText">
+        <item name="android:includeFontPadding">false</item>
+        <item name="android:background">@drawable/deiui_easy_edit_text_dialog_bg</item>
+        <item name="android:paddingLeft">6dp</item>
+        <item name="android:paddingRight">30dp</item>
+        <item name="android:paddingBottom">6dp</item>
+    </style>
+
+    <style name="deiui_sdk_share_dialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowBackground">@color/deiui_transparent</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:backgroundDimEnabled">true</item>
+    </style>
+
+
+    <style name="deiui_list_with_title_dialog_message_text_style">
+        <item name="android:textSize">@dimen/normal_text_size</item>
+        <item name="android:textColor">@color/deiui_dialog_positive_btn_color</item>
+    </style>
+
+    <style name="deiui_list_without_title_dialog_message_text_style">
+        <item name="android:textSize">@dimen/normal_text_size</item>
+        <item name="android:textColor">@color/colorAccent</item>
+    </style>
+
+    <style name="deiui_dialog_style" parent="@android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <!-- 边框 -->
+        <item name="android:windowIsFloating">true</item>
+        <!-- 是否浮现在activity之上 -->
+        <item name="android:windowIsTranslucent">true</item>
+        <!-- 半透明 -->
+        <item name="android:windowNoTitle">true</item>
+        <!-- 无标题 -->
+        <item name="android:windowBackground">@color/deiui_transparent</item>
+        <!-- 背景透明 -->
+        <item name="android:backgroundDimEnabled">true</item>
+        <!-- 后面的activity变暗 -->
+    </style>
+
+
+    <!-- 自定义仿IOS的ActionSheet底部Dialog的样式 ，有模糊效果 -->
+    <style name="DeiUiActionSheetDialogStyle" parent="@android:style/Theme.Dialog">
+        <!-- 背景透明 -->
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <!-- 浮于Activity之上 -->
+        <item name="android:windowIsFloating">true</item>
+        <!-- 边框 -->
+        <item name="android:windowFrame">@null</item>
+        <!-- Dialog以外的区域模糊效果 -->
+        <item name="android:backgroundDimEnabled">true</item>
+        <!-- 无标题 -->
+        <item name="android:windowNoTitle">true</item>
+        <!-- 半透明 -->
+        <item name="android:windowIsTranslucent">true</item>
+        <!-- Dialog进入及退出动画 -->
+        <item name="android:windowAnimationStyle">@style/DeiUiActionSheetDialogAnimation</item>
+    </style>
+
+    <style name="DeiUiNameEditText" parent="Widget.AppCompat.EditText">
+        <item name="android:background">@drawable/deiui_dialog_edit_text_background</item>
+        <item name="android:textCursorDrawable">@drawable/deiui_dialog_color_cursor</item>
+        <item name="colorControlNormal">#cccccc</item>
+        <!-- 文字和下划线的间距 -->
+        <item name="android:paddingBottom">5dp</item>
+        <!-- 文字和drawable直接的距离 -->
+        <item name="android:drawablePadding">5dp</item>
+        <item name="colorControlActivated">#cccccc</item>
+    </style>
+
+    <!-- ActionSheet进出动画 -->
+    <style name="DeiUiActionSheetDialogAnimation" parent="@android:style/Animation.Dialog">
+        <item name="android:windowEnterAnimation">@anim/deiui_actionsheet_dialog_in</item>
+        <item name="android:windowExitAnimation">@anim/deiui_actionsheet_dialog_out</item>
+    </style>
+</resources>

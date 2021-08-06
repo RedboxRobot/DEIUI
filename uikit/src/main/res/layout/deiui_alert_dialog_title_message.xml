@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageButton
+        android:id="@+id/easy_dialog_title_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="5dp"
+        android:background="@null"
+        android:contentDescription="@string/deiui_empty"
+        android:scaleType="center"
+        android:visibility="gone" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/dialog_title_tv"
+        style="@style/deiui_dialog_title_text_style"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="15dp"
+        android:layout_toRightOf="@+id/easy_dialog_title_button"
+        android:ellipsize="end"
+        android:gravity="left"
+        android:includeFontPadding="false"
+        android:visibility="gone"
+        tools:text="标题" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/desc_tv"
+        style="@style/deiui_dialog_message_text_style"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/dialog_title_tv"
+        android:layout_alignLeft="@+id/dialog_title_tv"
+        android:gravity="top"
+        android:includeFontPadding="false"
+        android:visibility="gone"
+        android:scrollbars="vertical"
+        tools:text="描述文字控制在三行" />
+</RelativeLayout>

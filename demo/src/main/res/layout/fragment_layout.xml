@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:scrollbars="none"
+            android:layout_height="wrap_content">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:paddingTop="20dp"
+            android:paddingBottom="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        <TextView
+                android:layout_marginTop="30dp"
+                android:id="@+id/tv1"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                android:text="无标题单行输入左对齐"
+                style="@style/deiui_layout_hint_text"/>
+
+        <com.delicloud.app.deiui.layout.DeiuiLayoutInputSingleEditText
+                android:id="@+id/single_edit"
+                app:layout_constraintTop_toBottomOf="@id/tv1"
+                android:layout_marginTop="10dp"
+                app:singleShowType="edit"
+                app:layout_constraintStart_toStartOf="parent"
+                app:singleEditHintContent="hint提示"
+                android:layout_height="45dp"
+                app:singleTopViewLeftMargin="10"
+                app:singleTopViewRightMargin="10"
+                app:singleBottomViewLeftMargin="10"
+                app:singleBottomViewRightMargin="10"
+                android:layout_width="match_parent"/>
+
+        <TextView
+                android:layout_marginTop="10dp"
+                android:id="@+id/tv2"
+                app:layout_constraintTop_toBottomOf="@id/single_edit"
+                app:layout_constraintStart_toStartOf="parent"
+                android:text="无标题单行输入带删除左对齐"
+                style="@style/deiui_layout_hint_text"/>
+
+        <com.delicloud.app.deiui.layout.DeiuiLayoutInputSingleEditText
+                android:id="@+id/single_edit_image"
+                app:layout_constraintTop_toBottomOf="@id/tv2"
+                android:layout_marginTop="10dp"
+                app:singleShowType="editAndImage"
+                app:layout_constraintStart_toStartOf="parent"
+                app:singleEditHintContent="hint提示"
+                android:layout_height="45dp"
+                android:layout_width="match_parent"/>
+
+        <TextView
+                android:layout_marginTop="10dp"
+                android:id="@+id/tv3"
+                app:layout_constraintTop_toBottomOf="@id/single_edit_image"
+                app:layout_constraintStart_toStartOf="parent"
+                android:text="单行输入左对齐"
+                style="@style/deiui_layout_hint_text"/>
+
+        <com.delicloud.app.deiui.layout.DeiuiLayoutInputSingleEditText
+                android:id="@+id/single_textAndImage"
+                app:layout_constraintTop_toBottomOf="@id/tv3"
+                android:layout_marginTop="10dp"
+                app:singleShowType="textAndEdit"
+                app:singleTextContent="单行"
+                app:layout_constraintStart_toStartOf="parent"
+                app:singleEditHintContent="hint提示"
+                android:layout_height="45dp"
+                android:layout_width="match_parent"/>
+
+        <TextView
+                android:layout_marginTop="10dp"
+                android:id="@+id/tv3_1"
+                app:layout_constraintTop_toBottomOf="@id/single_textAndImage"
+                app:layout_constraintStart_toStartOf="parent"
+                android:text="内容不可修改"
+                style="@style/deiui_layout_hint_text"/>
+
+        <com.delicloud.app.deiui.layout.DeiuiLayoutInputSingleEditText
+                android:id="@+id/single_textAndImage_no_amend"
+                app:layout_constraintTop_toBottomOf="@id/tv3_1"
+                android:layout_marginTop="10dp"
+                app:singleShowType="textAndEdit"
+                app:singleTextContent="标题文字"
+                app:singleEditContent="详细信息"
+                app:singleEditContentHasAmend="false"
+                app:layout_constraintStart_toStartOf="parent"
+                android:layout_height="45dp"
+                android:layout_width="match_parent"/>
+
+
+        <TextView
+                android:layout_marginTop="10dp"
+                android:id="@+id/tv4"
+                app:layout_constraintTop_toBottomOf="@id/single_textAndImage_no_amend"
+                app:layout_constraintStart_toStartOf="parent"
+                android:text="取消输入左对齐"
+                style="@style/deiui_layout_hint_text"/>
+
+        <com.delicloud.app.deiui.layout.DeiuiLayoutInputSingleEditText
+                app:layout_constraintTop_toBottomOf="@id/tv4"
+                android:layout_marginTop="10dp"
+                app:singleShowType="textAndEditAndImage"
+                android:id="@+id/single_textAndEditAndImage"
+                app:singleTextContent="单项输入"
+                app:singleEditHintContent="请输入内容"
+                app:layout_constraintStart_toStartOf="parent"
+                app:singleEditContent="666"
+                android:layout_height="45dp"
+                android:layout_width="match_parent"/>
+
+        <TextView
+                android:layout_marginTop="10dp"
+                android:id="@+id/tv44"
+                app:layout_constraintTop_toBottomOf="@id/single_textAndEditAndImage"
+                app:layout_constraintStart_toStartOf="parent"
+                android:text="取消输入左对齐"
+                style="@style/deiui_layout_hint_text"/>
+
+        <com.delicloud.app.deiui.layout.DeiuiLayoutInputSingleEditText
+                app:layout_constraintTop_toBottomOf="@id/tv44"
+                android:layout_marginTop="10dp"
+                app:singleShowType="textAndEditAndImage"
+                android:id="@+id/single_textAndEditAndImage_bias"
+                app:singleTextContent="单项输入"
+                app:singleEditHintContent="请输入内容"
+                app:layout_constraintStart_toStartOf="parent"
+                app:singleIsEditLeftGuidePercent="true"
+                app:singleEditLeftGuidePercentBias="0.3"
+                app:singleEditContent="666"
+                android:layout_height="45dp"
+                android:layout_width="match_parent"/>
+
+<!--
+
+        <TextView
+                android:layout_marginTop="10dp"
+                android:id="@+id/tv5"
+                app:layout_constraintTop_toBottomOf="@id/single_textAndEditAndImage_bias"
+                app:layout_constraintStart_toStartOf="parent"
+                android:text="无标题单行输入两端对齐"
+                style="@style/deiui_layout_hint_text"/>
+
+        <com.delicloud.app.deiui.layout.DeiuiLayoutInputSingleEditText
+                android:id="@+id/single_edit_ends"
+                app:layout_constraintTop_toBottomOf="@id/tv5"
+                android:layout_marginTop="10dp"
+                app:singleShowType="textAndEdit"
+                app:singleAlignType="adjust"
+                app:layout_constraintStart_toStartOf="parent"
+                app:singleEditHintContent="hint提示"
+                app:singleTextContent="单行输入两端对齐"
+                android:layout_height="45dp"
+                android:layout_width="match_parent"/>
+-->
+
+
+        <TextView
+                android:layout_marginTop="10dp"
+                android:id="@+id/tv6"
+                app:layout_constraintTop_toBottomOf="@+id/single_textAndEditAndImage_bias"
+                app:layout_constraintStart_toStartOf="parent"
+                android:text="组合输入"
+                style="@style/deiui_layout_hint_text"/>
+
+        <com.delicloud.app.deiui.layout.DeiuiLayoutInputSingleEditNext
+                android:id="@+id/single_next_adjust"
+                app:layout_constraintTop_toBottomOf="@id/tv6"
+                app:singleNextTextContent="手机号"
+                app:singleNextEditHintContent="请输入手机号"
+                android:layout_marginTop="10dp"
+                app:singleNextAlignType="adjust"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"/>
+
+        <TextView
+                android:layout_marginTop="10dp"
+                android:id="@+id/tv6_1"
+                app:layout_constraintTop_toBottomOf="@id/single_next_adjust"
+                app:layout_constraintStart_toStartOf="parent"
+                android:text="多项输入"
+                style="@style/deiui_layout_hint_text"/>
+
+        <com.delicloud.app.deiui.layout.DeiuiLayoutInputSingleEditNext
+                android:id="@+id/single_next_adjust_content_color"
+                app:layout_constraintTop_toBottomOf="@id/tv6_1"
+                app:singleNextTextContent="属性设置"
+                app:singleNextEditContent="未设置"
+                app:singleNextEditContentColor="color_99"
+                android:layout_marginTop="10dp"
+                app:singleNextAlignType="adjust"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"/>
+
+        <com.delicloud.app.deiui.layout.DeiuiLayoutInputSingleEditNext
+                android:id="@+id/single_next_adjust_content"
+                app:layout_constraintTop_toBottomOf="@id/single_next_adjust_content_color"
+                app:singleNextTextContent="多项输入"
+                app:singleNextEditContent="已填写信息"
+                app:singleNextEditHintContent="请输入手机号"
+                android:layout_marginTop="10dp"
+                app:singleNextAlignType="adjust"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"/>
+
+        <TextView
+                android:layout_marginTop="10dp"
+                android:id="@+id/tv7"
+                app:layout_constraintTop_toBottomOf="@id/single_next_adjust_content"
+                app:layout_constraintStart_toStartOf="parent"
+                android:text="组合输入"
+                style="@style/deiui_layout_hint_text"/>
+
+        <com.delicloud.app.deiui.layout.DeiuiLayoutInputSingleEditNext
+                android:id="@+id/single_next_left"
+                app:layout_constraintTop_toBottomOf="@id/tv7"
+                app:singleNextTextContent="姓名"
+                app:singleNextEditHintContent="请输入真实姓名"
+                app:singleNextAlignType="left"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"/>
+
+        <TextView
+                android:layout_marginTop="10dp"
+                android:id="@+id/tv8"
+                app:layout_constraintTop_toBottomOf="@id/single_next_left"
+                app:layout_constraintStart_toStartOf="parent"
+                android:text="组合输入"
+                style="@style/deiui_layout_hint_text"/>
+
+        <com.delicloud.app.deiui.layout.DeiuiLayoutInputSingleEditNext
+                android:id="@+id/single_next_left_bia"
+                app:layout_constraintTop_toBottomOf="@id/tv8"
+                app:singleNextTextContent="姓名"
+                app:singleNextEditHintContent="请输入真实姓名"
+                app:singleNextAlignType="left"
+                app:singleNextIsEditLeftGuidePercent="true"
+                app:singleNextEditLeftGuidePercentBias="0.2"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"/>
+
+        <TextView
+                android:layout_marginTop="10dp"
+                android:id="@+id/tv9"
+                app:layout_constraintTop_toBottomOf="@id/single_next_left_bia"
+                app:layout_constraintStart_toStartOf="parent"
+                android:text="段落文本输入"
+                style="@style/deiui_layout_hint_text"/>
+
+        <com.delicloud.app.deiui.layout.DeiuiLayoutInputParagraphEdit
+                android:id="@+id/paragraph_edit"
+                android:layout_width="match_parent"
+                app:layout_constraintTop_toBottomOf="@id/tv9"
+                app:layout_constraintStart_toStartOf="parent"
+                android:layout_marginTop="10dp"
+                app:paragraphCounterMax="130"
+                app:paragraphEditHintContent="请输入文字内容，例如：得力致力于为全球消费者提供性价比最优的产品，让工作学习更得力"
+                android:layout_height="135dp"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
